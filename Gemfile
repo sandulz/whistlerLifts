@@ -31,9 +31,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Added gems
+# Additional gems
 gem 'mechanize', '~> 2.7', '>= 2.7.4'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'weather-icons-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
