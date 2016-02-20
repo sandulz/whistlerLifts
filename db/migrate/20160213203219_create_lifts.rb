@@ -1,10 +1,15 @@
 class CreateLifts < ActiveRecord::Migration
   def change
     create_table :lifts do |t|
-      t.boolean :day0
-      t.boolean :day1
-      t.boolean :day2
-      t.boolean :day3
+      t.boolean "peak", :default => false
+      t.boolean "whistler_t_bar", :default => false
+      t.boolean "harmony", :default => false
+      t.boolean "symphony", :default => false
+      t.boolean "7th_heaven", :default => false
+      t.boolean "hostman_t_bar", :default => false
+      t.boolean "showcase_t_bar", :default => false
+      t.boolean "glacier", :default => false
+      t.boolean "crystal", :default => false
 
       t.timestamps null: false
     end

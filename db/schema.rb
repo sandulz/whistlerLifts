@@ -14,12 +14,17 @@
 ActiveRecord::Schema.define(version: 20160213203219) do
 
   create_table "lifts", force: :cascade do |t|
-    t.boolean  "day0"
-    t.boolean  "day1"
-    t.boolean  "day2"
-    t.boolean  "day3"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.boolean  "peak",           default: false
+    t.boolean  "whistler_t_bar", default: false
+    t.boolean  "harmony",        default: false
+    t.boolean  "symphony",       default: false
+    t.boolean  "7th_heaven",     default: false
+    t.boolean  "hostman_t_bar",  default: false
+    t.boolean  "showcase_t_bar", default: false
+    t.boolean  "glacier",        default: false
+    t.boolean  "crystal",        default: false
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
 end
